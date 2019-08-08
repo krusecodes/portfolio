@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
   }
-  
+
   body {
     font-family: "Open Sans",
     sans-serif; 
@@ -80,11 +80,81 @@
   section {
     display: flex; 
     display: block;
-    min-height: 200px;
+    min-height: 100px;
     padding: 6% 0;
     background-color: #bbb;
   }
   
   section:nth-child(even) {
     background-color: #ddd;
+  }
+
+  @media screen and (min-width: 700px){
+    .navigation {
+      display: flex;
+    }
+
+    .menu {
+      opacity: 100;
+      display: flex;
+      font-size: 18px;
+      list-style-type: none;
+      color: white;
+      flex: 1;
+      margin: 0;
+    }
+
+    .menuToggle{
+      flex: 1;
+    }
+
+    .menuList {
+      flex: 1; 
+    }
+
+    .navigation > .menuToggle {
+      opacity: 0
+    }
+
+    /* header  { 
+      background: url(images/bg.jpg) no-repeat center center fixed; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    } */
+
+    .projects {
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .space {
+      width: 200px
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    /* .skills {
+      display: flex;
+    }
+
+    .skillImage {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    } */
+
+    /* .project1, .project2 {
+      box-sizing: border-box;
+      height: 100px;
+      width: 100px;
+    } */
+
   }
