@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: "Open Sans",
+    sans-serif; 
+    font-size: 20px;
+    color: #444;
+    text-align: center;
+    line-height: 1.5;
+  }
+  
+  nav,
+  footer {
+    padding: 1% 0;
+    background-color: #aaa;
+  }
+  
+  .navigation {
+    padding: 9px;
+    background-color: grey;
+    height: 40px;
+  }
+  
+  .navigation > .menuToggle {
+    float: right;
+  }
+  
+  .menu {
+    opacity: 0;
+  }
+  
+  
+  header {
+    padding: 22% 0;
+    /* background-size: cover;
+    position: relative;
+    background-position: center; */
+    background-color: white;
+  }
+
+  .box {
+    background-color: white;
+    width: 80%;
+    height: 300px;
+    padding: 50px;
+    margin: 20px;
+    display: inline-block; 
+    text-align: center;
+  }
+
+  .project {
+    background-color: white;
+    width: 80%;
+    height: 300px;
+    padding: 50px;
+    margin: 20px;
+    display: inline-block; 
+    text-align: center;
+  }
+  
+  section {
+    display: flex; 
+    display: block;
+    min-height: 100px;
+    padding: 6% 0;
+    background-color: #bbb;
+  }
+  
+  section:nth-child(even) {
+    background-color: #ddd;
+  }
+
+  @media screen and (min-width: 700px){
+    .navigation {
+      display: flex;
+    }
+
+    .menu {
+      opacity: 100;
+      display: flex;
+      font-size: 18px;
+      list-style-type: none;
+      color: white;
+      flex: 1;
+      margin: 0;
+    }
+
+    .menuToggle{
+      flex: 1;
+    }
+
+    .menuList {
+      flex: 1; 
+    }
+
+    .navigation > .menuToggle {
+      opacity: 0
+    }
+
+    .projects {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+      }
+  
+      .space {
+        width: 200px
+      }
+
+    h2 {
+      text-align: center;
+    }
+
+    h3 {
+        text-align: center;
+    }
+
+    .box {
+        background-color: white;
+        width: 80%;
+        height: 300px;
+        padding: 50px;
+        margin: 20px;
+        display: inline-block; 
+        text-align: center;
+      }
+
+  }
