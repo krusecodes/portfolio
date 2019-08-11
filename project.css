@@ -30,7 +30,19 @@
   .menu {
     opacity: 0;
   }
-  
+
+  .button {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 300px;
+    height: auto;
+    font-family: "roboto";
+    font-size: 18px;
+    padding: 15px;
+    color: #F2F2F2;
+    background: #FF5C92;
+    border: none;
+  }
   
   header {
     padding: 22% 0;

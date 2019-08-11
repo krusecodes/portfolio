@@ -3,41 +3,74 @@
   }
 
   body {
-    font-family: "Open Sans",
-    sans-serif; 
+    font-family: "lato", "roboto";
     font-size: 20px;
-    color: #444;
+    color: #F2F2F2;
     text-align: center;
     line-height: 1.5;
+  }
+
+  h1 {
+    font-family: "roboto";
+    font-size: 35px;
+  }
+
+  h2 {
+    font-family: "roboto";
+    font-size: 27px;
+  }
+
+  h3 {
+    font-family: "lato";
+    font-size: 19px;
+    font-weight: normal;
+  }
+
+  h4 {
+    font-family: "lato";
+    font-size: 12px;
+    font-weight: normal;
   }
   
   nav,
   footer {
     padding: 1% 0;
-    background-color: #aaa;
+    background-color: #F2F2F2;
   }
   
   .navigation {
     padding: 9px;
-    background-color: grey;
+    background-color: #FF5C92;
     height: 40px;
+    width: 100%;
   }
   
   .navigation > .menuToggle {
     float: right;
+    color: #F2F2F2;
   }
   
   .menu {
     opacity: 0;
+    color: #F2F2F2;
+    font-family: "roboto";
   }
   
   
   header {
-    padding: 22% 0;
     /* background-size: cover;
     position: relative;
     background-position: center; */
-    background-color: white;
+    background-color: #ffffff;
+    color: #3A3B3D;
+  }
+
+  .mainHeader {
+    padding: 22% 0;
+  }
+
+  .projectHeader {
+    padding: 5% 0;
   }
 
   .project {
@@ -54,15 +87,28 @@
     text-align: center;
   } */
 
-  .downloadResume {
+  .button1 {
     box-sizing: border-box;
     display: inline-block;
     width: 300px;
     height: auto;
+    font-family: "roboto";
     font-size: 18px;
     padding: 15px;
-    color: white;
-    background: black;
+    color: #F2F2F2;
+    background: #3A3B3D;
+  }
+
+  .button2 {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 300px;
+    height: auto;
+    font-family: "roboto";
+    font-size: 18px;
+    padding: 15px;
+    color: #F2F2F2;
+    background: #FF5C92;
   }
 
   .skillImage {
@@ -86,14 +132,16 @@
     display: block;
     min-height: 100px;
     padding: 6% 0;
-    background-color: #bbb;
+    background-color: #FF5C92;
+    color: #F2F2F2; 
   }
   
   section:nth-child(even) {
-    background-color: #ddd;
+    background-color: #F2F2F2;
+    color: #3A3B3D;
   }
 
-  @media screen and (min-width: 700px){
+  @media screen and (min-width: 800px){
     .navigation {
       display: flex;
     }
