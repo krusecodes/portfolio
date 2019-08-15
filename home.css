@@ -4,7 +4,6 @@
 
   body {
     font-family: "lato", "roboto";
-    font-size: 20px;
     color: #F2F2F2;
     text-align: center;
     line-height: 1.5;
@@ -12,12 +11,12 @@
 
   h1 {
     font-family: "roboto";
-    font-size: 35px;
+    font-size: 70px;
   }
 
   h2 {
     font-family: "roboto";
-    font-size: 27px;
+    font-size: 35px;
   }
 
   h3 {
@@ -31,6 +30,31 @@
     font-size: 12px;
     font-weight: normal;
   }
+
+  p {
+    padding-left: 25%;
+    padding-right: 25%;
+  }
+
+  a:link {
+    text-decoration: none;
+  }
+
+  a:hover {
+    cursor: pointer;
+}
+
+input:hover {
+  cursor: pointer;
+}
+
+  a:visited {
+    text-decoration: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
   
   nav,
   footer {
@@ -43,6 +67,7 @@
     background-color: #FF5C92;
     height: 40px;
     width: 100%;
+    position: relative;
   }
   
   .navigation > .menuToggle {
@@ -58,27 +83,50 @@
   
   
   header {
-    /* background-size: cover;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.721), rgba(255, 255, 255, 0.721)), url("christopher-gower-_aXa21cf7rY-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
-    background-position: center; */
-    background-color: #ffffff;
     color: #3A3B3D;
+    background-color: white;
+    padding: 0;
+    margin: 0;
+  }
+
+  .headline {
+    padding-top: 32px;
   }
 
   .mainHeader {
-    padding: 22% 0;
+    padding: 16% 0;
+    padding-left: 30px
   }
 
   .projectHeader {
     padding: 5% 0;
+    background-color: #ffffff;
+  }
+
+  hr {
+    border-width: 3px;
+    max-width: 75px;
+  }
+  
+  .pinkBar {
+    border-color: #FF5C92;
+  }
+
+  .greyBar {
+    border-color: #3A3B3D;
   }
 
   .project {
     background-color: white;
-    width: 80%;
-    height: 300px;
-    padding: 50px;
-    margin: 20px;
+    width: 400px;
+    height: 400px;
+    /* padding: 50px;
+    margin: 20px; */
     display: inline-block; 
     text-align: center;
   }
@@ -188,7 +236,7 @@
       color: white;
     } */
 
-    .projects {
+    #PROJECTS {
       box-sizing: border-box;
       display: flex;
       flex-direction: row;
@@ -196,9 +244,17 @@
       justify-content: center;
     }
 
-    .space {
-      width: 200px
+    .screenshots {
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
     }
+
+    /* .space {
+      width: 200px
+    } */
 
     h2 {
       text-align: center;
@@ -209,10 +265,11 @@
     }
 
     .skillImage {
-      display: flex;
       flex-direction: row;
-      align-items: center;
+      flex: 15;
       justify-content: center;
+      padding-right: 55px;
+      padding-left: 55px;
     } */
 
     /* .project1, .project2 {

@@ -4,33 +4,42 @@
     <title>HTML wireframe</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
-    <link rel="stylesheet" type="text/css" href="home.css">
+    <link rel="stylesheet" type="text/css" href="project.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap" rel="stylesheet">
   </head>
   <body>
-    <nav class="navigation">
-        <div class="menuToggle">&#9776;</div>
-        <ul class="menu">
-            <li class="menuList">Bio</li>
-            <li class="menuList">Projects</li>
-            <li class="menuList">Skills</li>
-            <li class="menuList">Resume</li>
-            <li class="menuList">Contact</li>
-        </ul>
-    </nav>
+      <nav class="navigation">
+          <div class="menuToggle">&#9776;</div>
+          <ul class="menu">
+              <li class="menuList"><a class="home.html" href="#BIO">Home</a></li>
+              <!-- <li class="menuList">Contact</li> -->
+          </ul>
+      </nav>
 
-    <header role="banner" class="projectHeader">
-      <h1>Title</h1>
-      <h3>Description</h3>
+    <!-- <header role="banner" class="projectHeader"> -->
+      <!-- <h1>Quiz Web App</h1>
+      <p><h3>I created a web app that allows you to take a quiz. The quiz app has a starting page, it counts which question you are on, it keeps up with how many answers you got correct, it tells you if you got a question right or wrong, and finally it renders your results.</h3></p>
       <h4>Date:  Client:  Technologies:  Tag:</h3>
       <input type="button" class="button2" value="View Project"/>
-      <div class="box">Project Screenshots</div>
-    </header>
+      <div class="box">Project Screenshots</div> -->
+    <!-- </header> -->
         
     <main role="main">
 
-        <section class="projects">
+        <section id="BIO">
+            <h2>Quiz Web App</h2>
+            <hr class="greyBar">
+            <h3><p>I created a web app that allows you to take a quiz. The quiz app has a starting page, it counts which question you are on, it keeps up with how many answers you got correct, it tells you if you got a question right or wrong, and finally it renders your results. </p></h3> 
+            <a href="https://github.com/krusecodes/quiz_app.git" target="_blank" download>
+            <input type="button" class="button1" value="View GitHub"/>
+            </a>
+            <div class="screenshots">
+                <img src="start" alt="Norway" style="width:400px;height:300px;object-fit:cover;">
+            </div>
+        </section>
+
+        <section ID="PROJECTS">
             <div class="project1">
             <div class="project">Project 1</div>
             <h2>Title</h2>
