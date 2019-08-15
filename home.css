@@ -7,6 +7,7 @@
     color: #F2F2F2;
     text-align: center;
     line-height: 1.5;
+    margin: 0;
   }
 
   h1 {
@@ -36,7 +37,19 @@
     padding-right: 25%;
   }
 
+  .nav-link {
+    color: #F2F2F2;
+  }
+
   a:link {
+    text-decoration: none;
+  }
+
+  .project-title {
+    color: #3A3B3D;
+  }
+
+  a:visited {
     text-decoration: none;
   }
 
@@ -63,11 +76,14 @@ input:hover {
   }
   
   .navigation {
+    overflow: hidden;
     padding: 9px;
     background-color: #FF5C92;
     height: 40px;
     width: 100%;
-    position: relative;
+    position: fixed;
+    top: 0;
+    z-index: 10;
   }
   
   .navigation > .menuToggle {
@@ -119,6 +135,10 @@ input:hover {
 
   .greyBar {
     border-color: #3A3B3D;
+  }
+
+  .main {
+    padding-top: 40px;
   }
 
   .project {
@@ -187,6 +207,10 @@ input:hover {
   section:nth-child(even) {
     background-color: #F2F2F2;
     color: #3A3B3D;
+  }
+
+  .fa {
+    color: #F2F2F2;
   }
 
   @media screen and (min-width: 800px){
