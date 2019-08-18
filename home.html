@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>HTML wireframe</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,16 +12,29 @@
     <script src="index.js"></script>
   </head>
   <body>
-    <nav class="navigation">
-        <div class="menuToggle">&#9776;</div>
-        <ul class="menu">
+
+    <!-- <nav class="navigation"> -->
+    <nav role="navigation" class="navigation">
+        <div id="menuToggle">
+
+        <input type="checkbox"/>
+
+        <span></span>   
+        <span></span>
+        <span></span>
+
+        <!-- <div class="menuToggle">&#9776;</div> -->
+        <!-- <ul class="menu"> -->
+        <ul id="menu">
             <li class="menuList"><a class="nav-link" href="#BIO">Bio</a></li>
             <li class="menuList"><a class="nav-link" href="#PROJECTS">Projects</a></li>
             <li class="menuList"><a class="nav-link" href="#RESUME">Resume</a></li>
             <li class="menuList"><a class="nav-link" href="#SKILLS">Skills</a></li>
             <!-- <li class="menuList">Contact</li> -->
         </ul>
+        </div>
     </nav>
+
     <div class="main">
 
     <header role="banner" class="mainHeader">
@@ -45,7 +58,7 @@
             <div class="project1">
             <div class="project">
             <a href="https://github.com/krusecodes/quiz_app.git" target="_blank" download>    
-            <img src="start.jpg" alt="Norway" style="width:400px;height:400px;object-fit:cover;">
+            <img src="start.jpg" alt="Proejct Picture" style="width:400px;height:400px;object-fit:cover;" role="img">
             </a>    
             </div>
             <a href="https://github.com/krusecodes/quiz_app.git" target="_blank" download>
@@ -76,25 +89,24 @@
             <h2 class="skillBanner">SKILLS</h2>
             <div class="skills">
             <div class="skillImage">
-            <img class="skill" src="HTML5_Badge_256.png" alt="HTML 5 Logo">
+            <img class="skill" role="img" src="javascript-logo.png" alt="javascript-logo">
             </div>
 
             <div class="space"></div>
 
             <div class="skillImage"></div>
-            <img class="skill" src="javascript-logo.png" alt="HTML 5 Logo">
+            <img class="skill" role="img" src="javascript-logo.png" alt="javascript-logo">
             </div>
             </div>
         </section>
         
-        <section>
+        <section class="footer">
             <h2>Let's Chat</h2>
             <hr class="greyBar">
             <h3><p>Thank you for checking out my page. If you ever find yourself in the San Francisco area, I would love to meet for a cup of coffee.</p></h3>
             <div class="socialRow">
-                <i class="fas fa-ad"></i>
                 <div class="contactIcon">
-                    <a href="https://www.instagram.com/travelkruse/">
+                    <a href="https://www.instagram.com/travelkruse/" target="_blank">
                     <i class="fa fa-instagram fa-3x wow bounceIn"></i>
                     </a> 
                 </div>
@@ -104,12 +116,12 @@
                     </a>  
                     </div>
                 <div class="contactIcon">
-                    <a href="www.linkedin.com/in/noahkruse">
+                    <a href="https://www.linkedin.com/in/noahkruse" target="_blank">
                     <i class="fa fa-linkedin fa-3x wow bounceIn"></i> 
                     </a>     
                     </div>
                 <div class="contactIcon">
-                <a href="https://github.com/krusecodes">
+                <a href="https://github.com/krusecodes" target="_blank">
                 <i class="fa fa-github fa-3x wow bounceIn"></i> 
                 </a>     
                 </div>        

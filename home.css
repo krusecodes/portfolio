@@ -10,6 +10,7 @@
     margin: 0;
   }
 
+
   h1 {
     font-family: "roboto";
     font-size: 70px;
@@ -45,6 +46,10 @@
     text-decoration: none;
   }
 
+  a:hover {
+    color: #FF5C92;
+  }
+
   .project-title {
     color: #3A3B3D;
   }
@@ -69,33 +74,135 @@ input:hover {
     text-decoration: none;
   }
   
-  nav,
-  footer {
-    padding: 1% 0;
-    background-color: #F2F2F2;
-  }
-  
-  .navigation {
-    overflow: hidden;
-    padding: 9px;
-    background-color: #FF5C92;
-    height: 40px;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    z-index: 10;
-  }
-  
-  .navigation > .menuToggle {
-    float: right;
-    color: #F2F2F2;
-  }
-  
-  .menu {
-    opacity: 0;
-    color: #F2F2F2;
-    font-family: "roboto";
-  }
+
+   /* ///// */
+
+   #menuToggle
+   {
+     display: block;
+     position: relative;
+     top: 50px;
+     left: 50px;
+     position: fixed;
+     z-index: 1;
+     
+     -webkit-user-select: none;
+     user-select: none;
+   }
+   
+   #menuToggle input {
+     display: block;
+     width: 40px;
+     height: 32px;
+     position: absolute;
+     top: -7px;
+     left: -5px;
+     cursor: pointer;
+     opacity: 0; /* hide this */
+     z-index: 2; /* and place it over the hamburger */
+     
+     -webkit-touch-callout: none;
+   }
+   
+   /*
+    * Just a quick hamburger
+    */
+   #menuToggle span
+   {
+     display: block;
+     width: 33px;
+     height: 4px;
+     margin-bottom: 5px;
+     position: relative;
+     
+     background: #3A3B3D;
+     border-radius: 3px;
+     
+     z-index: 1;
+     
+     transform-origin: 4px 0px;
+     
+     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                 background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                 opacity 0.55s ease;
+   }
+   
+   #menuToggle span:first-child
+   {
+     transform-origin: 0% 0%;
+   }
+   
+   #menuToggle span:nth-last-child(2)
+   {
+     transform-origin: 0% 100%;
+   }
+   
+   /* 
+    * Transform all the slices of hamburger
+    * into a crossmark.
+    */
+   #menuToggle input:checked ~ span
+   {
+     opacity: 1;
+     transform: rotate(45deg) translate(-2px, -1px);
+     background: #F2F2F2;
+   }
+   
+   /*
+    * But let's hide the middle one.
+    */
+   #menuToggle input:checked ~ span:nth-last-child(3)
+   {
+     opacity: 0;
+     transform: rotate(0deg) scale(0.2, 0.2);
+   }
+   
+   /*
+    * Ohyeah and the last one should go the other direction
+    */
+   #menuToggle input:checked ~ span:nth-last-child(2)
+   {
+     transform: rotate(-45deg) translate(0, -1px);
+   }
+   
+   /*
+    * Make this absolute positioned
+    * at the top left of the screen
+    */
+   #menu
+   {
+     position: absolute;
+     width: 300px;
+     margin: -100px 0 0 -50px;
+     padding: 50px;
+     padding-top: 125px;
+     
+     background: #3A3B3D;
+     list-style-type: none;
+     -webkit-font-smoothing: antialiased;
+     /* to stop flickering of text in safari */
+     
+     transform-origin: 0% 0%;
+     transform: translate(-100%, 0);
+     
+     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+   }
+   
+   #menu li
+   {
+     padding: 10px 0;
+     font-size: 22px;
+   }
+   
+   /*
+    * And let's slide it in from the left
+    */
+   #menuToggle input:checked ~ ul
+   {
+     transform: none;
+   } 
+
+/* /////// */
   
   
   header {
@@ -179,12 +286,12 @@ input:hover {
     background: #FF5C92;
   }
 
-  .skillImage {
+  /* .skillImage {
     -ms-flex: 50%; 
     flex: 50%;
     padding: 15px;
     margin: 15px;
-  }
+  } */
 
   /* .skill {
     height: 200px;
@@ -213,32 +320,78 @@ input:hover {
     color: #F2F2F2;
   }
 
+  .socialRow {
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+
+  .contactIcon {
+    padding: 20px;
+  }
+
+  /* .skillImage {
+    padding: 20px;
+  } */
+
   @media screen and (min-width: 800px){
     .navigation {
+      display: block!important;
+      visibility: visible!important;
       display: flex;
+      padding: 9px;
+      background-color: #FF5C92;
+      height: 40px;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      z-index: 10;
     }
 
+    /* /////// */
+    
     .menu {
       opacity: 100;
       display: flex;
       font-size: 18px;
       list-style-type: none;
-      color: white;
+      color: #F2F2F2;
       flex: 1;
       margin: 0;
     }
 
-    .menuToggle{
+    #menuToggle{
       flex: 1;
     }
 
     .menuList {
       flex: 1; 
+      color: #F2F2F2;
     }
 
-    .navigation > .menuToggle {
-      opacity: 0
+    .navigation > #menuToggle {
+      opacity: 0;
     }
+
+
+
+  nav,
+  footer {
+  padding: 1% 0;
+  background-color: #F2F2F2;
+}
+
+/* .navigation > #menuToggle {
+  float: right;
+  color: #F2F2F2;
+} */
+
+
+ #menu {
+  float: right;  
+  color: #F2F2F2;
+  font-family: "roboto";
+}
+
 
     /* header  { 
       background: url(images/bg.jpg) no-repeat center center fixed; 
@@ -284,11 +437,34 @@ input:hover {
       text-align: center;
     }
 
-    /* .skills {
+    /* .footer {
       display: flex;
+    } */
+
+    .socialRow {
+      display: flex;
+      flex: 1;
+      justify-content: center;
+      position: relative;
+      min-height: 1px;
+      padding-right: 15px;
+      padding-left: 15px;
     }
 
-    .skillImage {
+    .contactIcon {
+      padding: 50px;
+    }
+
+    .skills {
+      display: flex;
+      flex: 8;
+      justify-content: center;
+      position: relative;
+      min-height: 1px;
+      padding: 15px;
+    }
+
+    /* .skillImage {
       flex-direction: row;
       flex: 15;
       justify-content: center;
@@ -301,5 +477,7 @@ input:hover {
       height: 100px;
       width: 100px;
     } */
+
+    
 
   }
