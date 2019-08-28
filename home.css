@@ -335,8 +335,6 @@ input:hover {
 
   @media screen and (min-width: 800px){
     .navigation {
-      display: block!important;
-      visibility: visible!important;
       display: flex;
       padding: 9px;
       background-color: #FF5C92;
@@ -349,7 +347,7 @@ input:hover {
 
     /* /////// */
     
-    .menu {
+    #menu {
       opacity: 100;
       display: flex;
       font-size: 18px;
@@ -357,10 +355,17 @@ input:hover {
       color: #F2F2F2;
       flex: 1;
       margin: 0;
+      float: right;  
+      font-family: "roboto";
+      width: 20%;
+      top: 0;
+      right: 0;
     }
 
     #menuToggle{
       flex: 1;
+      top: 0px;
+      left: 0px;
     }
 
     .menuList {
@@ -368,11 +373,9 @@ input:hover {
       color: #F2F2F2;
     }
 
-    .navigation > #menuToggle {
-      opacity: 0;
+    .hamburger {
+      display: none;
     }
-
-
 
   nav,
   footer {
@@ -384,13 +387,6 @@ input:hover {
   float: right;
   color: #F2F2F2;
 } */
-
-
- #menu {
-  float: right;  
-  color: #F2F2F2;
-  font-family: "roboto";
-}
 
 
     /* header  { 
