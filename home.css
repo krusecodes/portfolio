@@ -77,7 +77,7 @@ input:hover {
 
    /* ///// */
 
-   #menuToggle
+   .menuToggle
    {
      display: block;
      position: relative;
@@ -90,7 +90,7 @@ input:hover {
      user-select: none;
    }
    
-   #menuToggle input {
+   .menuToggle input {
      display: block;
      width: 40px;
      height: 32px;
@@ -107,7 +107,7 @@ input:hover {
    /*
     * Just a quick hamburger
     */
-   #menuToggle span
+   .menuToggle span
    {
      display: block;
      width: 33px;
@@ -127,12 +127,12 @@ input:hover {
                  opacity 0.55s ease;
    }
    
-   #menuToggle span:first-child
+   .menuToggle span:first-child
    {
      transform-origin: 0% 0%;
    }
    
-   #menuToggle span:nth-last-child(2)
+   .menuToggle span:nth-last-child(2)
    {
      transform-origin: 0% 100%;
    }
@@ -141,7 +141,7 @@ input:hover {
     * Transform all the slices of hamburger
     * into a crossmark.
     */
-   #menuToggle input:checked ~ span
+   .menuToggle input:checked ~ span
    {
      opacity: 1;
      transform: rotate(45deg) translate(-2px, -1px);
@@ -151,7 +151,7 @@ input:hover {
    /*
     * But let's hide the middle one.
     */
-   #menuToggle input:checked ~ span:nth-last-child(3)
+   .menuToggle input:checked ~ span:nth-last-child(3)
    {
      opacity: 0;
      transform: rotate(0deg) scale(0.2, 0.2);
@@ -160,7 +160,7 @@ input:hover {
    /*
     * Ohyeah and the last one should go the other direction
     */
-   #menuToggle input:checked ~ span:nth-last-child(2)
+   .menuToggle input:checked ~ span:nth-last-child(2)
    {
      transform: rotate(-45deg) translate(0, -1px);
    }
@@ -169,7 +169,7 @@ input:hover {
     * Make this absolute positioned
     * at the top left of the screen
     */
-   #menu
+   .menu
    {
      position: absolute;
      width: 300px;
@@ -188,7 +188,7 @@ input:hover {
      transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
    }
    
-   #menu li
+   .menu li
    {
      padding: 10px 0;
      font-size: 22px;
@@ -197,7 +197,7 @@ input:hover {
    /*
     * And let's slide it in from the left
     */
-   #menuToggle input:checked ~ ul
+   .menuToggle input:checked ~ ul
    {
      transform: none;
    } 
@@ -334,7 +334,7 @@ input:hover {
   } */
 
   @media screen and (min-width: 800px){
-    .navigation {
+    /* .navigation {
       display: flex;
       padding: 9px;
       background-color: #FF5C92;
@@ -344,10 +344,8 @@ input:hover {
       top: 0;
       z-index: 10;
     }
-
-    /* /////// */
     
-    #menu {
+    .menu {
       opacity: 100;
       display: flex;
       font-size: 18px;
@@ -362,7 +360,7 @@ input:hover {
       right: 0;
     }
 
-    #menuToggle{
+    .menuToggle{
       flex: 1;
       top: 0px;
       left: 0px;
@@ -375,13 +373,15 @@ input:hover {
 
     .hamburger {
       display: none;
-    }
+    } */
 
   nav,
   footer {
   padding: 1% 0;
   background-color: #F2F2F2;
 }
+
+/* /////////// */
 
 /* .navigation > #menuToggle {
   float: right;
