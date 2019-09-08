@@ -47,7 +47,7 @@
   }
 
   a:hover {
-    color: #FF5C92;
+    color: #3A3B3D;
   }
 
   .project-title {
@@ -74,139 +74,63 @@ input:hover {
     text-decoration: none;
   }
   
-
-   /* ///// */
-
-   .menuToggle
-   {
-     display: block;
-     position: relative;
-     top: 50px;
-     left: 50px;
-     position: fixed;
-     z-index: 1;
-     
-     -webkit-user-select: none;
-     user-select: none;
-   }
-   
-   .menuToggle input {
-     display: block;
-     width: 40px;
-     height: 32px;
-     position: absolute;
-     top: -7px;
-     left: -5px;
-     cursor: pointer;
-     opacity: 0; /* hide this */
-     z-index: 2; /* and place it over the hamburger */
-     
-     -webkit-touch-callout: none;
-   }
-   
-   /*
-    * Just a quick hamburger
-    */
-   .menuToggle span
-   {
-     display: block;
-     width: 33px;
-     height: 4px;
-     margin-bottom: 5px;
-     position: relative;
-     
-     background: #3A3B3D;
-     border-radius: 3px;
-     
-     z-index: 1;
-     
-     transform-origin: 4px 0px;
-     
-     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                 background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                 opacity 0.55s ease;
-   }
-   
-   .menuToggle span:first-child
-   {
-     transform-origin: 0% 0%;
-   }
-   
-   .menuToggle span:nth-last-child(2)
-   {
-     transform-origin: 0% 100%;
-   }
-   
-   /* 
-    * Transform all the slices of hamburger
-    * into a crossmark.
-    */
-   .menuToggle input:checked ~ span
-   {
-     opacity: 1;
-     transform: rotate(45deg) translate(-2px, -1px);
-     background: #F2F2F2;
-   }
-   
-   /*
-    * But let's hide the middle one.
-    */
-   .menuToggle input:checked ~ span:nth-last-child(3)
-   {
-     opacity: 0;
-     transform: rotate(0deg) scale(0.2, 0.2);
-   }
-   
-   /*
-    * Ohyeah and the last one should go the other direction
-    */
-   .menuToggle input:checked ~ span:nth-last-child(2)
-   {
-     transform: rotate(-45deg) translate(0, -1px);
-   }
-   
-   /*
-    * Make this absolute positioned
-    * at the top left of the screen
-    */
-   .menu
-   {
-     position: absolute;
-     width: 300px;
-     margin: -100px 0 0 -50px;
-     padding: 50px;
-     padding-top: 125px;
-     
-     background: #3A3B3D;
-     list-style-type: none;
-     -webkit-font-smoothing: antialiased;
-     /* to stop flickering of text in safari */
-     
-     transform-origin: 0% 0%;
-     transform: translate(-100%, 0);
-     
-     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-   }
-   
-   .menu li
-   {
-     padding: 10px 0;
-     font-size: 22px;
-   }
-   
-   /*
-    * And let's slide it in from the left
-    */
-   .menuToggle input:checked ~ ul
-   {
-     transform: none;
-   } 
-
 /* /////// */
+
+.navigationDesktop {
+  visibility: hidden;
+}
+
+.hamburger{
+  background:none;
+  position:fixed;
+  top:0;
+  right:0;
+  line-height:45px;
+  padding:5px 25px 0px 15px;
+  color:#3A3B3D;
+  border:0;
+  font-size:1.8em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.cross{
+  background:none;
+  position:fixed;
+  top:0px;
+  right:0;
+  padding:7px 25px 0px 15px;
+  color:#3A3B3D;
+  border:0;
+  font-size:3.4em;
+  line-height:65px;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+
+.menu{z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:#f1f1f1;  position:fixed; text-align:center; font-size:12px;}
+.menu .menuToggle {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
+.menu li {display: block;   padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menu li:hover{display: block; background:#ffffff; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menu .menuToggle li a { text-decoration:none;  margin: 0px; color:#666;}
+.menu .menuToggle li a:hover {  color: #666; text-decoration:none;}
+.menu a{text-decoration:none; color:#666;}
+.menu a:hover{text-decoration:none; color:#666;}
+
+.glyphicon-home{
+  color:white; 
+  font-size:1.5em; 
+  margin-top:5px; 
+  margin:0 auto;
+}
   
-  
+/* /////////  */
+
   header {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.721), rgba(255, 255, 255, 0.721)), url("christopher-gower-_aXa21cf7rY-unsplash.jpg");
+    background-image: linear-gradient(rgba(255, 255, 255, 0.721), rgba(255, 255, 255, 0.721)), url("content/christopher-gower-_aXa21cf7rY-unsplash.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -252,15 +176,9 @@ input:hover {
     background-color: white;
     width: 400px;
     height: 400px;
-    /* padding: 50px;
-    margin: 20px; */
     display: inline-block; 
     text-align: center;
   }
-
-  /* h2, h3, {
-    text-align: center;
-  } */
 
   .button1 {
     box-sizing: border-box;
@@ -285,18 +203,6 @@ input:hover {
     color: #F2F2F2;
     background: #FF5C92;
   }
-
-  /* .skillImage {
-    -ms-flex: 50%; 
-    flex: 50%;
-    padding: 15px;
-    margin: 15px;
-  } */
-
-  /* .skill {
-    height: 200px;
-    width: 200px;
-  } */
 
   .skill {
     height: 150px;
@@ -329,85 +235,86 @@ input:hover {
     padding: 20px;
   }
 
-  /* .skillImage {
-    padding: 20px;
-  } */
-
-  @media screen and (min-width: 800px){
-    /* .navigation {
-      display: flex;
-      padding: 9px;
-      background-color: #FF5C92;
-      height: 40px;
-      width: 100%;
-      position: fixed;
-      top: 0;
-      z-index: 10;
-    }
-    
-    .menu {
-      opacity: 100;
-      display: flex;
-      font-size: 18px;
-      list-style-type: none;
-      color: #F2F2F2;
-      flex: 1;
-      margin: 0;
-      float: right;  
-      font-family: "roboto";
-      width: 20%;
-      top: 0;
-      right: 0;
-    }
-
-    .menuToggle{
-      flex: 1;
-      top: 0px;
-      left: 0px;
-    }
-
-    .menuList {
-      flex: 1; 
-      color: #F2F2F2;
-    }
-
-    .hamburger {
-      display: none;
-    } */
-
-  nav,
+  /* nav, */
   footer {
   padding: 1% 0;
-  background-color: #F2F2F2;
+  background-color: #FF5C92;
 }
 
-/* /////////// */
 
-/* .navigation > #menuToggle {
-  float: right;
-  color: #F2F2F2;
-} */
+  @media screen and (min-width: 800px){
+    .navigation {
+      visibility: hidden;
+    }
 
-
-    /* header  { 
-      background: url(images/bg.jpg) no-repeat center center fixed; 
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
-    } */
-/* 
-    header {
-      position: relative;
+    .navigationDesktop {
+      visibility: visible;
       width: 100%;
-      height: 100%;
-      min-height: auto;
-      background-size: cover;
-      background-position: center;
-      background-color: red;
-      text-align: center;
-      color: white;
-    } */
+      background: #FF5C92;
+      height: 50px;
+      display: flex;
+      position: fixed;
+      z-index: 10;
+    }
+
+    .menuDesktop {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 200px;
+      width: 100%;
+    }
+
+    .menuToggleDesktop {
+      list-style-type: none;
+      display: flex;
+      float: right;
+      padding-right: 30px;
+    }
+
+    .menuListDesktop {
+      flex: 1;
+      float: right;
+      padding: 0px 20px 0px 20px;
+      color: #F2F2F2;
+    }
+    
+    .menuListDesktop:hover {
+      color:#3A3B3D;
+    }
+
+    
+    /* .navigation {
+      display: flex;
+    }
+    .menu {
+    display: flex!important;
+    height: auto!important;
+    padding-bottom: 0;
+  }
+  
+    .menuToggle {
+    float: right;
+    margin-right: -15px;
+    flex: 1;
+  }
+
+  .menu li {
+    display: flex!important;
+    padding: 15px 5px 15px 10px;
+    border-bottom: none;
+    flex: 1;
+    text-align: left;
+}
+
+.menu li:hover {
+  display: flex;
+  flex: 1;
+}
+
+.cross, .hamburger {
+  display: none!important;
+} */
 
     #PROJECTS {
       box-sizing: border-box;
@@ -425,17 +332,9 @@ input:hover {
       justify-content: center;
     }
 
-    /* .space {
-      width: 200px
-    } */
-
     h2 {
       text-align: center;
     }
-
-    /* .footer {
-      display: flex;
-    } */
 
     .socialRow {
       display: flex;
@@ -459,21 +358,5 @@ input:hover {
       min-height: 1px;
       padding: 15px;
     }
-
-    /* .skillImage {
-      flex-direction: row;
-      flex: 15;
-      justify-content: center;
-      padding-right: 55px;
-      padding-left: 55px;
-    } */
-
-    /* .project1, .project2 {
-      box-sizing: border-box;
-      height: 100px;
-      width: 100px;
-    } */
-
-    
 
   }
