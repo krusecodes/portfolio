@@ -1,5 +1,4 @@
-// function myFunction(x) {
-//     if (x.matches) { 
+
         $( document ).ready(function() {
 
             $( ".cross" ).hide();
@@ -27,6 +26,4 @@
             
             });
 
-// var x = window.matchMedia("(max-width: 800px)")
-// myFunction(x) 
-// x.addListener(myFunction) 
+
