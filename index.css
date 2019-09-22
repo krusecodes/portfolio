@@ -43,8 +43,11 @@
   }
 
   p {
-    padding-left: 25%;
-    padding-right: 25%;
+    font-family: "lato";
+    font-size: 19px;
+    font-weight: normal;
+    padding-left: 20%;
+    padding-right: 20%;
   }
 
   .nav-link {
@@ -123,12 +126,13 @@ input:hover {
 
 .menu{z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:#FF5C92;  position:fixed; text-align:center; font-size:12px;}
 .menu .menuToggle {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
-.menu li {display: block;   padding:15px 0 15px 0; }
+.menu li {display: block; color: #3A3B3D;  padding:15px 0 15px 0; }
 .menu li:hover{display: block; background:#ffffff; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
 .menu .menuToggle li a { text-decoration:none;  margin: 0px; color:#666;}
 .menu .menuToggle li a:hover {  color: #666; text-decoration:none;}
 .menu a{text-decoration:none; color:#F2F2F2;}
 .menu a:hover{text-decoration:none; color:#666;}
+
 
 .glyphicon-home{
   color:white; 
@@ -303,6 +307,7 @@ input:hover {
     
     .menuListDesktop:hover {
       color:#3A3B3D;
+      cursor: pointer;
     }
 
     #PROJECTS {
@@ -339,9 +344,9 @@ input:hover {
       padding: 50px;
     }
 
-    .skills {
+    .skillsChild {
       display: flex;
-      flex: 8;
+      flex: 2;
       justify-content: center;
       position: relative;
       min-height: 1px;
