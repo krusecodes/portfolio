@@ -12,28 +12,29 @@
 }
 
   body {
-    font-family: "lato", "roboto";
+    font-family: "lato", "Montserrat";
     color: #F2F2F2;
-    text-align: center;
+    text-align: left;
     line-height: 1.5;
     margin: 0;
   }
 
 
   h1 {
-    font-family: "roboto";
+    font-family: "Montserrat";
     font-size: 70px;
   }
 
   h2 {
-    font-family: "roboto";
-    font-size: 35px;
+    font-family: "Montserrat";
+    font-size: 30px;
   }
 
   h3 {
     font-family: "lato";
     font-size: 19px;
     font-weight: normal;
+    color: #154D54;
   }
 
   h4 {
@@ -46,8 +47,7 @@
     font-family: "lato";
     font-size: 19px;
     font-weight: normal;
-    padding-left: 20%;
-    padding-right: 20%;
+    color: #154D54;
   }
 
   .nav-link {
@@ -144,7 +144,6 @@ input:hover {
 /* /////////  */
 
   header {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.721), rgba(255, 255, 255, 0.721)), url("Content/christopher-gower-_aXa21cf7rY-unsplash.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -159,9 +158,9 @@ input:hover {
     padding-top: 32px;
   }
 
-  .mainHeader {
+  /* .mainHeader {
     padding: 16% 0;
-  }
+  } */
 
   .projectHeader {
     padding: 5% 0;
@@ -172,18 +171,10 @@ input:hover {
     border-width: 3px;
     max-width: 75px;
   }
-  
-  .pinkBar {
-    border-color: #FF5C92;
-  }
 
-  .greyBar {
-    border-color: #3A3B3D;
-  }
-
-  .main {
+  /* .main {
     padding-top: 40px;
-  }
+  } */
 
   .project {
     background-color: white;
@@ -193,12 +184,68 @@ input:hover {
     text-align: center;
   }
 
+  .projectHeadline {
+    margin-left: 160px;
+  }
+
+  .projectTitle {
+    padding-top: 112px;
+    margin-left: 105px;
+    text-align: left;
+  }
+
+  .projectLink {
+    /* margin-top: 171px;
+    margin-bottom: 112px; */
+    text-align: left;
+    margin-left: 105px;
+  }
+
+  .rectangle {
+    margin: auto;
+    padding-right: 156px;
+    padding-left: 156px;
+  }
+
+  .rectangleYellow {
+    padding-right: 153px;
+    height: 312px;
+    left: 156px;
+    top: 894px;
+    background-color: #FFC561;
+    margin-bottom: 60px;
+  }
+
+  .rectangleOrange {
+    padding-right: 153px;
+    height: 312px;
+    left: 156px;
+    top: 894px;
+    background-color: #FF6B48;
+    margin-bottom: 60px;
+  }
+
+  .rectangleBlue {
+    padding-right: 153px;
+    height: 312px;
+    left: 156px;
+    top: 894px;
+    background-color: #00A5B9;
+  }
+
+  #dotDivider {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
   .button1 {
     box-sizing: border-box;
     display: inline-block;
     width: 300px;
     height: auto;
-    font-family: "roboto";
+    font-family: "Montserrat";
     font-size: 18px;
     padding: 15px;
     color: #F2F2F2;
@@ -210,7 +257,7 @@ input:hover {
     display: inline-block;
     width: 300px;
     height: auto;
-    font-family: "roboto";
+    font-family: "Montserrat";
     font-size: 18px;
     padding: 15px;
     color: #F2F2F2;
@@ -222,7 +269,7 @@ input:hover {
     display: inline-block;
     width: 300px;
     height: auto;
-    font-family: "roboto";
+    font-family: "Montserrat";
     font-size: 18px;
     padding: 15px;
     color: #3A3B3D;
@@ -238,12 +285,28 @@ input:hover {
     display: block;
     min-height: 100px;
     padding: 6% 0;
-    background-color: #FF5C92;
+    background-color: #ffffff;
     color: #F2F2F2; 
+  }
+
+  .aboutMe {
+    background-color: #ffffff;
+    /* padding: 20px; */
+    margin-top: 139px;
+    margin-left: 156px;
+    margin-right: 157px;
+    font-family: Arial;
+  }
+
+  .meContent {
+    align-items: center;
+    text-align: left;
+    justify-content: center;
+    background-color: white;
   }
   
   section:nth-child(even) {
-    background-color: #F2F2F2;
+    background-color: #ffffff;
     color: #3A3B3D;
   }
 
@@ -263,27 +326,44 @@ input:hover {
   /* nav, */
   footer {
   padding: 1% 0;
-  background-color: #FF5C92;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.footerTitle {
+  text-align: center;
 }
 
 
-  @media screen and (min-width: 800px){
+  @media screen and (min-width: 1200px){
     .navigation {
       visibility: hidden;
     }
 
     .navigationDesktop {
       visibility: visible;
-      width: 100%;
-      background: #FF5C92;
+      background: #ffffff;
       height: 50px;
       display: flex;
-      position: fixed;
       z-index: 10;
+      text-align: right;
     }
 
+    .menuListDesktop {
+      flex: 1;
+      float: right;
+      /* text: alight-right; */
+      padding: 70px 103px 0px 20px;
+      color: #154D54;
+    }
+
+    /* #name {
+      color: #FF6B48;
+      float: left; 
+    } */
+
     .menuDesktop {
-      position: absolute;
+      position: relative;
       top: 0;
       right: 0;
       height: 200px;
@@ -294,20 +374,23 @@ input:hover {
       list-style-type: none;
       display: flex;
       float: right;
-      padding-right: 30px;
+      padding-right: 36px;
+      padding-top: 19.5px;
     }
 
-    .menuListDesktop {
-      flex: 1;
-      float: right;
-      padding: 0px 20px 0px 20px;
-      color: #F2F2F2;
+    #logo { 
+      position: absolute;
+	    top:0; 
+      left:0;
+      width: auto;
+      height: 200px;
     }
     
-    .menuListDesktop:hover {
+    /* .menuListDesktop:hover {
       color:#3A3B3D;
       cursor: pointer;
-    }
+      padding: 153px;
+    } */
 
     #PROJECTS {
       box-sizing: border-box;
@@ -317,23 +400,17 @@ input:hover {
       justify-content: center;
     }
 
-    .screenshots {
-      box-sizing: border-box;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
-    }
-
     h2 {
-      text-align: center;
+      text-align: left;
+      font-family: "Montserrat";
+      font-size: 48px;
+      color: #154D54;
     }
 
     .socialRow {
       display: flex;
       flex: 1;
       justify-content: center;
-      position: relative;
       min-height: 1px;
       padding-right: 15px;
       padding-left: 15px;
@@ -343,13 +420,28 @@ input:hover {
       padding: 50px;
     }
 
-    .skillsChild {
-      display: flex;
-      flex: 2;
-      justify-content: center;
-      position: relative;
-      min-height: 1px;
-      padding: 15px;
+    .fa-github:before {
+      color: #154D54;
     }
+
+    .fa-linkedin:before {
+      color: #154D54;
+    }
+
+    .fa-envelope:before {
+      color: #154D54;
+    }
+
+    .fa-instagram:before {
+      color: #154D54;
+    }
+
+    /* #bottomSquiggles {
+      bottom: 0; 
+      left: 0;
+      width: auto;
+      height: 200px;
+      position: absolute;
+    } */
 
   }

@@ -1,7 +1,10 @@
 .projectsBody {
-    background-color: #f1f1f1;
+    /* background-color: #ffffff;
     padding: 20px;
-    font-family: Arial;
+    margin-top: 139px;
+    margin-left: 160px;
+    margin-right: 266px;
+    font-family: Arial; */
   }
 
   .link {
@@ -12,30 +15,32 @@
     color: #3A3B3D;
   }
 
-.row {
+/* .row {
     margin: 4px -16px;
     display: flex;
     justify-content: center;
-  }
+  } */
+ 
 
   p {
     font-family: "lato";
     font-size: 19px;
     font-weight: normal;
-    padding-left: 10%;
-    padding-right: 10%;
+    /* padding-left: 10%;
+    padding-right: 10%; */
+    color: #154D54;
 }
   
-  .row,
+  /* .row,
   .row > .column {
     padding: 8px;
   }
-  
-  .column {
+   */
+  /* .column {
     display: flex;
-    text-align: center;
+    text-align: left;
     width: 35%;
-  }
+  } */
   
   .row:after {
     content: "";
@@ -45,10 +50,9 @@
   
   .content {
     align-items: center;
-    text-align: center;
+    text-align: left;
     justify-content: center;
     background-color: white;
-    padding: 10px;
   }
 
   @media screen and (max-width: 750px) {
