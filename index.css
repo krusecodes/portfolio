@@ -254,6 +254,10 @@ input:hover {
     text-align: center;
   }
 
+  .projectTitleModal {
+    text-align: center;
+  }
+
   /* The Modal (background) */
 
 #myModal {
@@ -303,7 +307,7 @@ input:hover {
   box-sizing: border-box;
   border: none;
   display: inline-block;
-  width: 300px;
+  width: 180px;
   height: auto;
   font-family: "Montserrat";
   font-size: 18px;
@@ -314,6 +318,23 @@ input:hover {
 
 .button1:hover {
   background-color: rgba(255, 105, 72, 0.783);
+}
+
+.button2 {
+  box-sizing: border-box;
+  border: none;
+  display: inline-block;
+  width: 180px;
+  height: auto;
+  font-family: "Montserrat";
+  font-size: 18px;
+  padding: 15px;
+  color: #154D54;
+  background: #FFC561;
+}
+
+.button2:hover {
+  background-color: rgba(255, 197, 97, 0.797);
 }
 
 /* Modul 2 */
@@ -410,21 +431,6 @@ input:hover {
     cursor: pointer;
   }
 
-  
-
-.button2 {
-  box-sizing: border-box;
-  border: none;
-  display: inline-block;
-  width: 300px;
-  height: auto;
-  font-family: "Montserrat";
-  font-size: 18px;
-  padding: 15px;
-  color: #154D54;
-  background: #FFC561;
-}
-
 #myModal4 {
   display: none;
 }  
@@ -468,27 +474,11 @@ input:hover {
   cursor: pointer;
 }
 
-.button2:hover {
-  background-color: rgba(255, 197, 97, 0.797);
-}
-
   #dotDivider {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-  }
-
-  .button3 {
-    box-sizing: border-box;
-    display: inline-block;
-    width: 300px;
-    height: auto;
-    font-family: "Montserrat";
-    font-size: 18px;
-    padding: 15px;
-    color: #3A3B3D;
-    background: #F2F2F2;
   }
 
   .skill {
@@ -648,6 +638,40 @@ input:hover {
       text-align: left;
       justify-content: center;
       background-color: white;
+    }
+
+    .button1 {
+      box-sizing: border-box;
+      border: none;
+      display: inline-block;
+      width: 300px;
+      height: auto;
+      font-family: "Montserrat";
+      font-size: 18px;
+      padding: 15px;
+      color: #154D54;
+      background: #FF6B48;
+    }
+    
+    .button1:hover {
+      background-color: rgba(255, 105, 72, 0.783);
+    }
+    
+    .button2 {
+      box-sizing: border-box;
+      border: none;
+      display: inline-block;
+      width: 300px;
+      height: auto;
+      font-family: "Montserrat";
+      font-size: 18px;
+      padding: 15px;
+      color: #154D54;
+      background: #FFC561;
+    }
+    
+    .button2:hover {
+      background-color: rgba(255, 197, 97, 0.797);
     }
 
     .projectHeadline {
