@@ -133,6 +133,10 @@ input:hover {
   z-index:10000000000000;
 }
 
+.menuList:hover {
+  cursor: pointer;
+}
+
 .menu{z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:#00A5B9;  position:fixed; text-align:center; font-size:24px;}
 .menu .menuToggle {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
 .menu li {display: block; color: #ffffff;  padding:15px 0 15px 0; }
@@ -161,7 +165,6 @@ input:hover {
   } */
 
   .aboutMe {
-    padding-top: 95px;
     background-color: #ffffff;
     margin-left: 80px;
     margin-right: 80px;
@@ -534,6 +537,22 @@ input:hover {
   margin-right: 80px;
 }
 
+.fa-github:before {
+  color: #154D54;
+}
+
+.fa-linkedin:before {
+  color: #154D54;
+}
+
+.fa-envelope:before {
+  color: #154D54;
+}
+
+.fa-instagram:before {
+  color: #154D54;
+}
+
 
   @media screen and (min-width: 1200px){
     a {
@@ -568,6 +587,14 @@ input:hover {
       font-size: 24px;
       font: "Montserrat"
     }
+
+    .menuListDesktop:hover {
+      cursor: pointer;
+    }
+
+    /* .menuListDesktop:hover {
+      curser: pointer;
+    } */
 
     /* #name {
       color: #FF6B48;
@@ -607,6 +634,7 @@ input:hover {
     } */
 
     .aboutMe {
+      padding-top: 95px;
       background-color: #ffffff;
       /* padding: 20px; */
       margin-top: 139px;
