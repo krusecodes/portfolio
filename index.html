@@ -17,9 +17,13 @@
         <button class="cross">&#735;</button>
         <div class="menu">
             <ul class="menuToggle">
-                <li class="menuList" onclick="location.href='#BIO';">BIO</li>
-                <li class="menuList" onclick="location.href='#PROJECTS';">PROJECTS</li>
-                <li class="menuList" onclick="location.href='#RESUME';">RESUME</li>
+                <!-- <li><img src="Content/header_logo.png" id="logo" alt="quiz-image" å></li> -->
+                <li class="menuList" onclick="location.href='#projectsLink';">Projects</li>
+                <li class="menuList"><a
+                        href="https://drive.google.com/file/d/10m8HRyoS71FcNOexmVpmo4V2TitX6Z6d/view?usp=sharing"
+                        target="_blank">Resume</a>
+                </li>
+                <li class="menuList" onclick="location.href='#letsChatLink';">Contact</li>
             </ul>
         </div>
     </nav>
@@ -28,9 +32,12 @@
         <div class="menuDesktop">
             <ul class="menuToggleDesktop">
                 <li><img src="Content/header_logo.png" id="logo" alt="quiz-image" å></li>
-                <li class="menuListDesktop" onclick="location.href='#PROJECTS';">Projects</li>
-                <li class="menuListDesktop" onclick="location.href='#RESUME';">Resume</li>
-                <li class="menuListDesktop" onclick="location.href='#SKILLS';">Contact</li>
+                <li class="menuListDesktop" onclick="location.href='#projectsLink';">Projects</li>
+                <li class="menuListDesktop"><a
+                        href="https://drive.google.com/file/d/10m8HRyoS71FcNOexmVpmo4V2TitX6Z6d/view?usp=sharing"
+                        target="_blank">Resume</a>
+                </li>
+                <li class="menuListDesktop" onclick="location.href='#letsChatLink';">Contact</li>
             </ul>
         </div>
     </nav>
@@ -56,58 +63,109 @@
             </div>
         </section>
 
-        <section class="projectsBody">
+        <section id="projectsLink" class="projectsBody">
             <h3 class="projectHeadline">My Recent Work</h3>
             <div class="rectangle">
                 <div class="rectangleYellow">
-                    <h2 class="projectTitle">ClimbLog App</h2>
+                    <h2 class="projectTitle">climbLog</h2>
                     <h3 class="projectLink"><a href="#" id="myBtn">Learn more...</a></h3>
 
                     <!-- The Modal -->
-                    <div id="myModal" class="modal">
+                </div>
+                <div id="myModal" class="modal">
 
-                        <!-- Modal content -->
-                        <div class="modal-content">
-                            <span class="close">&times;</span>
-                            <h2>ClimbLog</h2>
-                            <p>Using PostgreSQL as a database and building my API using Node.JS and Express, my React
-                                powered client allows climbers to keep track of their climbs by logging a climb rating,
-                                what they learned, the difficulty level of the climb and more in one easy to use
-                                climber’s log.</p>
-                            <p>Tech: React, Node.js, Express, PostgreSQL, CSS</p>
-                            <button onclick="window.location.href='https://github.com/krusecodes/climblog-app';"
-                                class="button1">View
-                                Repo</button>
-                        </div>
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h2>climbLog</h2>
+                        <p>Using PostgreSQL as a database and building my API using Node.JS and Express, my React
+                            powered client allows climbers to keep track of their climbs by logging a climb rating,
+                            what they learned, the difficulty level of the climb and more in one easy to use
+                            climber’s log.</p>
+                        <p>Tech: React, Node.js, Express, PostgreSQL, CSS</p>
+                        <button onclick="window.location.href='https://github.com/krusecodes/climblog-app';"
+                            class="button1">View
+                            Repo</button>
+                    </div>
 
+                </div>
+
+                <div class="rectangleOrange">
+                    <h2 class="projectTitle">coffeeBuddies</h2>
+                    <h3 class="projectLink"><a href="#" id="myBtn2">Learn more...</a></h3>
+
+                </div>
+                <div id="myModal2" class="modal2">
+                    <div class="modal-content2">
+                        <span class="close2">&times;</span>
+                        <h2>coffeeBuddies</h2>
+                        <p>Using the Google Maps API and the News API, I created an app that allows you to find
+                            coffee shops in your area along with the types of news articles that you want to read
+                            while you are at your coffee shop.</p>
+                        <p>Tech: JavaScript, HTML5, CSS, jQuery, Google Maps API</p>
+                        <button onclick="window.location.href='https://github.com/krusecodes/api_hack_capstone';"
+                            class="button2">View
+                            Repo</button>
                     </div>
                 </div>
-                <div class="rectangleOrange">
-                    <h2 class="projectTitle">ClimbLog App</h2>
-                    <h3 class="projectLink">Learn more...</h3>
-                </div>
                 <div class="rectangleBlue">
-                    <h2 class="projectTitle">ClimbLog App</h2>
-                    <h3 class="projectLink">Learn more...</h3>
+                    <h2 class="projectTitle">noteFul</h2>
+                    <h3 class="projectLink"><a href="#" id="myBtn3">Learn more...</a></h3>
                 </div>
-            </div>
+                <div id="myModal3" class="modal3">
+                    <div class="modal-content3">
+                        <span class="close3">&times;</span>
+                        <h2>noteFul</h2>
+                        <p>Pulling in data from a server side API using the Post method, this web application allows you
+                            to creator folders, add notes to the folders, create notes within the folders and delete the
+                            notes and folders. </p>
+                        <p>Tech: JavaScript, CSS, React</p>
+                        <button onclick="window.location.href='https://github.com/krusecodes/noteful';"
+                            class="button2">View
+                            Repo</button>
+                    </div>
+                </div>
+
+                <div class="rectangleYellow">
+                    <h2 class="projectTitle">quizApp</h2>
+                    <h3 class="projectLink"><a href="#" id="myBtn4">Learn more...</a></h3>
+
+                    <!-- The Modal -->
+                </div>
+                <div id="myModal4" class="modal4">
+
+                    <!-- Modal content -->
+                    <div class="modal-content4">
+                        <span class="close4">&times;</span>
+                        <h2>quizApp</h2>
+                        <p>Utilizing jQuery, I built a quiz application that counts how many questions you have
+                            completed, how many questions you have gotten correctly, and whether you passed or failed.
+                        </p>
+                        <p>Tech: JavaScript, HTML, CSS, jQuery</p>
+                        <button onclick="window.location.href='https://github.com/krusecodes/quiz_app';"
+                            class="button1">View
+                            Repo</button>
+                    </div>
+
+                </div>
         </section>
 
-        <section class="imageDivider">
+        <!-- <section class="imageDivider">
             <div class="imageDivider">
                 <img src="Content/dots.png" id="dotDivider" alt="quiz-image" å>
             </div>
-        </section>
+        </section> -->
 
 
     </main>
     <footer>
-        <h2 class="footerTitle">Let's Chat</h2>
-        <p>Thank you for checking out my page. If you ever find yourself in the San Francisco area, I would love to meet
+        <h2 id="letsChatLink" class="footerTitle">Let's Chat</h2>
+        <p class="chatSection">Thank you for checking out my page. If you ever find yourself in the San Francisco area,
+            I would love to meet
             for a cup of coffee.</p>
         <div class="socialRow">
             <div class="contactIcon">
-                <a href="https://www.instagram.com/travelkruse/" target="_blank" target="_blank">
+                <a href="https://www.instagram.com/travelkruse/" target="_blank">
                     <i class="fa fa-instagram fa-3x wow bounceIn"></i>
                 </a>
             </div>
